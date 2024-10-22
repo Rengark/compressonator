@@ -1,0 +1,128 @@
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\87E32854C58A14A7E8A5DE4C9E9DBA88\EXTERN_BROTLIG-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Release -P "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/tmp/extern_brotlig-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/src/extern_brotlig-stamp/Release/extern_brotlig-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\87E32854C58A14A7E8A5DE4C9E9DBA88\EXTERN_BROTLIG-DOWNLOAD.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/src/extern_brotlig-stamp/Release/extern_brotlig-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\87E32854C58A14A7E8A5DE4C9E9DBA88\EXTERN_BROTLIG-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/src/extern_brotlig-stamp/Release/extern_brotlig-update"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\87E32854C58A14A7E8A5DE4C9E9DBA88\EXTERN_BROTLIG-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/src/extern_brotlig-stamp/Release/extern_brotlig-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\87E32854C58A14A7E8A5DE4C9E9DBA88\EXTERN_BROTLIG-CONFIGURE.RULE
+setlocal
+cd "F:\School Stuff\Y3T1\common\lib\ext\brotlig\build"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-GVisual Studio 17 2022" -Tv142 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/brotlig" -B "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/brotlig/build"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/src/extern_brotlig-stamp/Release/extern_brotlig-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\87E32854C58A14A7E8A5DE4C9E9DBA88\EXTERN_BROTLIG-BUILD.RULE
+setlocal
+cd "F:\School Stuff\Y3T1\common\lib\ext\brotlig\build"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/src/extern_brotlig-stamp/Release/extern_brotlig-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\87E32854C58A14A7E8A5DE4C9E9DBA88\EXTERN_BROTLIG-INSTALL.RULE
+setlocal
+cd "F:\School Stuff\Y3T1\common\lib\ext\brotlig\build"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+cmake -E echo "Skipping install step."
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/src/extern_brotlig-stamp/Release/extern_brotlig-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\F0B9A09E88CCBD47771E6F2616964E05\EXTERN_BROTLIG-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "F:/School Stuff/Y3T1/compressonator/CMakeFiles/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/CMakeFiles/Release/extern_brotlig-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/extern_brotlig-prefix/src/extern_brotlig-stamp/Release/extern_brotlig-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\95CCB32A2B262D3E6B668385F56C5C70\EXTERN_BROTLIG.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/School Stuff/Y3T1/compressonator" "-BF:/School Stuff/Y3T1/compressonator" --check-stamp-file "F:/School Stuff/Y3T1/compressonator/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

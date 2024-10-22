@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc1_encode_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc2_encode_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc3_encode_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc4_encode_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc5_encode_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc6_encode_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc7_encode_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\source\cmp_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_libs\cmp_math\cpu_extensions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_libs\cmp_math\cmp_math_common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\brlg_encode_kernel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc1_encode_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc1_common_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc2_encode_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc3_encode_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc4_encode_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc5_encode_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc6_encode_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc7_encode_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bc7_common_encoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bcn_common_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\bcn_common_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\common_def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\source\cmp_core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\source\cmp_math_vec4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\source\cmp_math_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\cmp_core\shaders\brlg_encode_kernel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7956164C-D211-370F-9886-70413E21FD2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FCB5D0E9-823B-3E3F-B885-82D1DA1D60DA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

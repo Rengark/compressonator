@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\cmp_core\source\core_simd_avx512.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FCB5D0E9-823B-3E3F-B885-82D1DA1D60DA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

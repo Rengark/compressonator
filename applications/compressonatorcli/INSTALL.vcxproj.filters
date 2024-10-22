@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\School Stuff\Y3T1\compressonator\CMakeFiles\a270961bc4a7f0b49408e3df793ff42f\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{68F688FF-6659-3EF9-A148-2ABE33E034DE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

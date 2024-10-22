@@ -1,0 +1,128 @@
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\66E6BBFFD74C7E51D422BA9AECBF5147\EXTERN_KTX-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Release -P "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/tmp/extern_ktx-mkdirs.cmake"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/src/extern_ktx-stamp/Release/extern_ktx-mkdir"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\66E6BBFFD74C7E51D422BA9AECBF5147\EXTERN_KTX-DOWNLOAD.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/src/extern_ktx-stamp/Release/extern_ktx-download"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\66E6BBFFD74C7E51D422BA9AECBF5147\EXTERN_KTX-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/src/extern_ktx-stamp/Release/extern_ktx-update"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\66E6BBFFD74C7E51D422BA9AECBF5147\EXTERN_KTX-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/src/extern_ktx-stamp/Release/extern_ktx-patch"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\66E6BBFFD74C7E51D422BA9AECBF5147\EXTERN_KTX-CONFIGURE.RULE
+setlocal
+cd "F:\School Stuff\Y3T1\common\lib\ext\ktx\build"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" "-DCMAKE_INSTALL_PREFIX:PATH=F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx" -G "Visual Studio 17 2022" "-GVisual Studio 17 2022" -Tv142 "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files/Microsoft Visual Studio/2022/Community" -S "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx" -B "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/build"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/src/extern_ktx-stamp/Release/extern_ktx-configure"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\66E6BBFFD74C7E51D422BA9AECBF5147\EXTERN_KTX-BUILD.RULE
+setlocal
+cd "F:\School Stuff\Y3T1\common\lib\ext\ktx\build"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/src/extern_ktx-stamp/Release/extern_ktx-build"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\66E6BBFFD74C7E51D422BA9AECBF5147\EXTERN_KTX-INSTALL.RULE
+setlocal
+cd "F:\School Stuff\Y3T1\common\lib\ext\ktx\build"
+if %errorlevel% neq 0 goto :cmEnd
+F:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Release --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/src/extern_ktx-stamp/Release/extern_ktx-install"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\F0B9A09E88CCBD47771E6F2616964E05\EXTERN_KTX-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory "F:/School Stuff/Y3T1/compressonator/CMakeFiles/Release"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/CMakeFiles/Release/extern_ktx-complete"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch "F:/School Stuff/Y3T1/compressonator/../common/lib/ext/ktx/src/extern_ktx-stamp/Release/extern_ktx-done"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\95CCB32A2B262D3E6B668385F56C5C70\EXTERN_KTX.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/School Stuff/Y3T1/compressonator" "-BF:/School Stuff/Y3T1/compressonator" --check-stamp-file "F:/School Stuff/Y3T1/compressonator/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\atiformats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\cmdline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\cmp_fileio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\misc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\modeldata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\pluginmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\cpu_timing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\ssim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\tc_plugininternal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\textureio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\userinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\utilfuncs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\cexr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\atiformats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\cmdline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\cmp_fileio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\common_kerneldef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\crc32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\hpc_compress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\misc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\modeldata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\namespacealias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\pluginbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\plugininterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\pluginmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\cpu_timing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\ssim.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\tc_pluginapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\tc_plugininternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\testreport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\textureio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\userinterface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\utilfuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\vectypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\cexr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{7956164C-D211-370F-9886-70413E21FD2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FCB5D0E9-823B-3E3F-B885-82D1DA1D60DA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{41A97EF3-A23C-31C0-BF02-12F630AEA03D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Image_KTX</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\School Stuff\Y3T1\compressonator\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Image_KTX.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Image_KTX</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\School Stuff\Y3T1\compressonator\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Image_KTX.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Image_KTX</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib;F:\School Stuff\Y3T1\compressonator\applications\_libs\gpu_decode;F:\School Stuff\Y3T1\compressonator\cmp_framework\common\half;F:\School Stuff\Y3T1\compressonator\applications\_plugins\common;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\glew\1.9.0\include;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.\lib;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\include;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\lib;\include;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\.;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\apc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\atc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\ati;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\basis;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc6h;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc7;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\block;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\buffer;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxtc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc\etcpack;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\gt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\common;F:\School Stuff\Y3T1\compressonator\cmp_framework\common;F:\School Stuff\Y3T1\compressonator\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\brotlig;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\inc;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external\brotli\c\include;F:\School Stuff\Y3T1\compressonator\cmp_core\shaders;F:\School Stuff\Y3T1\compressonator\cmp_core\source;F:\School Stuff\Y3T1\compressonator\cmp_core\..\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_framework\.;F:\School Stuff\Y3T1\compressonator\applications\_plugins\ccmp_sdk;F:\School Stuff\Y3T1\compressonator\external\stb;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\other_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OPTION_BUILD_KTX2=1;OPTION_BUILD_EXR=1;OPTION_BUILD_GUI=1;OPTION_CMP_DIRECTX=1;OPTION_CMP_VULKAN=0;OPTION_CMP_OPENGL=1;OPTION_CMP_QT=0;OPTION_CMP_OPENCV=1;OPTION_CMP_GTC=0;OPTION_BUILD_BROTLIG=1;OPTION_BUILD_BROTLIG_GUI=0;OPTION_BUILD_ASTC=0;OPTION_BUILD_DRACO=0;NO_LEGACY_BEHAVIOR=1;USE_ETCPACK;USE_MESH_CLI;ENABLE_MAKE_COMPATIBLE_API;USE_OLD_SWIZZLE;USE_QTWEBKIT;USE_LOSSLESS_COMPRESSION;USE_LOSSLESS_COMPRESSION_BINARY;_DEBUG;_CMP_CPP17_=1;_WIN32;CMP_USE_XMMINTRIN;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OPTION_BUILD_KTX2=1;OPTION_BUILD_EXR=1;OPTION_BUILD_GUI=1;OPTION_CMP_DIRECTX=1;OPTION_CMP_VULKAN=0;OPTION_CMP_OPENGL=1;OPTION_CMP_QT=0;OPTION_CMP_OPENCV=1;OPTION_CMP_GTC=0;OPTION_BUILD_BROTLIG=1;OPTION_BUILD_BROTLIG_GUI=0;OPTION_BUILD_ASTC=0;OPTION_BUILD_DRACO=0;NO_LEGACY_BEHAVIOR=1;USE_ETCPACK;USE_MESH_CLI;ENABLE_MAKE_COMPATIBLE_API;USE_OLD_SWIZZLE;USE_QTWEBKIT;USE_LOSSLESS_COMPRESSION;USE_LOSSLESS_COMPRESSION_BINARY;_CMP_CPP17_=1;_WIN32;CMP_USE_XMMINTRIN;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib;F:\School Stuff\Y3T1\compressonator\applications\_libs\gpu_decode;F:\School Stuff\Y3T1\compressonator\cmp_framework\common\half;F:\School Stuff\Y3T1\compressonator\applications\_plugins\common;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\glew\1.9.0\include;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.\lib;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\include;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\lib;\include;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\.;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\apc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\atc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\ati;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\basis;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc6h;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc7;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\block;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\buffer;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxtc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc\etcpack;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\gt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\common;F:\School Stuff\Y3T1\compressonator\cmp_framework\common;F:\School Stuff\Y3T1\compressonator\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\brotlig;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\inc;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external\brotli\c\include;F:\School Stuff\Y3T1\compressonator\cmp_core\shaders;F:\School Stuff\Y3T1\compressonator\cmp_core\source;F:\School Stuff\Y3T1\compressonator\cmp_core\..\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_framework\.;F:\School Stuff\Y3T1\compressonator\applications\_plugins\ccmp_sdk;F:\School Stuff\Y3T1\compressonator\external\stb;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\other_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib;F:\School Stuff\Y3T1\compressonator\applications\_libs\gpu_decode;F:\School Stuff\Y3T1\compressonator\cmp_framework\common\half;F:\School Stuff\Y3T1\compressonator\applications\_plugins\common;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\glew\1.9.0\include;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.\lib;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\include;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\lib;\include;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\.;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\apc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\atc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\ati;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\basis;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc6h;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc7;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\block;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\buffer;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxtc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc\etcpack;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\gt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\common;F:\School Stuff\Y3T1\compressonator\cmp_framework\common;F:\School Stuff\Y3T1\compressonator\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\brotlig;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\inc;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external\brotli\c\include;F:\School Stuff\Y3T1\compressonator\cmp_core\shaders;F:\School Stuff\Y3T1\compressonator\cmp_core\source;F:\School Stuff\Y3T1\compressonator\cmp_core\..\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_framework\.;F:\School Stuff\Y3T1\compressonator\applications\_plugins\ccmp_sdk;F:\School Stuff\Y3T1\compressonator\external\stb;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\other_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib;F:\School Stuff\Y3T1\compressonator\applications\_libs\gpu_decode;F:\School Stuff\Y3T1\compressonator\cmp_framework\common\half;F:\School Stuff\Y3T1\compressonator\applications\_plugins\common;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\glew\1.9.0\include;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.\lib;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\include;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\lib;\include;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\.;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\apc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\atc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\ati;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\basis;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc6h;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc7;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\block;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\buffer;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxtc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc\etcpack;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\gt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\common;F:\School Stuff\Y3T1\compressonator\cmp_framework\common;F:\School Stuff\Y3T1\compressonator\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\brotlig;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\inc;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external\brotli\c\include;F:\School Stuff\Y3T1\compressonator\cmp_core\shaders;F:\School Stuff\Y3T1\compressonator\cmp_core\source;F:\School Stuff\Y3T1\compressonator\cmp_core\..\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_framework\.;F:\School Stuff\Y3T1\compressonator\applications\_plugins\ccmp_sdk;F:\School Stuff\Y3T1\compressonator\external\stb;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\other_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPTION_BUILD_KTX2=1;OPTION_BUILD_EXR=1;OPTION_BUILD_GUI=1;OPTION_CMP_DIRECTX=1;OPTION_CMP_VULKAN=0;OPTION_CMP_OPENGL=1;OPTION_CMP_QT=0;OPTION_CMP_OPENCV=1;OPTION_CMP_GTC=0;OPTION_BUILD_BROTLIG=1;OPTION_BUILD_BROTLIG_GUI=0;OPTION_BUILD_ASTC=0;OPTION_BUILD_DRACO=0;NO_LEGACY_BEHAVIOR=1;USE_ETCPACK;USE_MESH_CLI;ENABLE_MAKE_COMPATIBLE_API;USE_OLD_SWIZZLE;USE_QTWEBKIT;USE_LOSSLESS_COMPRESSION;USE_LOSSLESS_COMPRESSION_BINARY;_CMP_CPP17_=1;_WIN32;CMP_USE_XMMINTRIN;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPTION_BUILD_KTX2=1;OPTION_BUILD_EXR=1;OPTION_BUILD_GUI=1;OPTION_CMP_DIRECTX=1;OPTION_CMP_VULKAN=0;OPTION_CMP_OPENGL=1;OPTION_CMP_QT=0;OPTION_CMP_OPENCV=1;OPTION_CMP_GTC=0;OPTION_BUILD_BROTLIG=1;OPTION_BUILD_BROTLIG_GUI=0;OPTION_BUILD_ASTC=0;OPTION_BUILD_DRACO=0;NO_LEGACY_BEHAVIOR=1;USE_ETCPACK;USE_MESH_CLI;ENABLE_MAKE_COMPATIBLE_API;USE_OLD_SWIZZLE;USE_QTWEBKIT;USE_LOSSLESS_COMPRESSION;USE_LOSSLESS_COMPRESSION_BINARY;_CMP_CPP17_=1;_WIN32;CMP_USE_XMMINTRIN;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib;F:\School Stuff\Y3T1\compressonator\applications\_libs\gpu_decode;F:\School Stuff\Y3T1\compressonator\cmp_framework\common\half;F:\School Stuff\Y3T1\compressonator\applications\_plugins\common;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\glew\1.9.0\include;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.\lib;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\include;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\lib;\include;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\.;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\apc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\atc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\ati;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\basis;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc6h;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc7;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\block;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\buffer;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxtc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc\etcpack;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\gt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\common;F:\School Stuff\Y3T1\compressonator\cmp_framework\common;F:\School Stuff\Y3T1\compressonator\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\brotlig;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\inc;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external\brotli\c\include;F:\School Stuff\Y3T1\compressonator\cmp_core\shaders;F:\School Stuff\Y3T1\compressonator\cmp_core\source;F:\School Stuff\Y3T1\compressonator\cmp_core\..\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_framework\.;F:\School Stuff\Y3T1\compressonator\applications\_plugins\ccmp_sdk;F:\School Stuff\Y3T1\compressonator\external\stb;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\other_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib;F:\School Stuff\Y3T1\compressonator\applications\_libs\gpu_decode;F:\School Stuff\Y3T1\compressonator\cmp_framework\common\half;F:\School Stuff\Y3T1\compressonator\applications\_plugins\common;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\glew\1.9.0\include;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.\lib;F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\.;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\include;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\lib;\include;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\.;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\apc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\atc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\ati;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\basis;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc6h;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\bc7;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\block;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\buffer;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\dxtc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\etc\etcpack;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\gt;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\common;F:\School Stuff\Y3T1\compressonator\cmp_framework\common;F:\School Stuff\Y3T1\compressonator\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\brotlig;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\inc;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\brotlig\external\brotli\c\include;F:\School Stuff\Y3T1\compressonator\cmp_core\shaders;F:\School Stuff\Y3T1\compressonator\cmp_core\source;F:\School Stuff\Y3T1\compressonator\cmp_core\..\applications\_libs\cmp_math;F:\School Stuff\Y3T1\compressonator\cmp_framework\.;F:\School Stuff\Y3T1\compressonator\applications\_plugins\ccmp_sdk;F:\School Stuff\Y3T1\compressonator\external\stb;F:\School Stuff\Y3T1\compressonator\..\common\lib\ext\ktx\other_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/School Stuff/Y3T1/compressonator/applications/_plugins/cimage/ktx/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/School Stuff/Y3T1/compressonator" "-BF:/School Stuff/Y3T1/compressonator" --check-stamp-file "F:/School Stuff/Y3T1/compressonator/applications/_plugins/cimage/ktx/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/School Stuff/Y3T1/compressonator/applications/_plugins/cimage/ktx/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/School Stuff/Y3T1/compressonator" "-BF:/School Stuff/Y3T1/compressonator" --check-stamp-file "F:/School Stuff/Y3T1/compressonator/applications/_plugins/cimage/ktx/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\checkheader.c" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\errstr.c" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\gl_funcptrs.h" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\gles1_funcptrs.h" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\gles2_funcptrs.h" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\gles3_funcptrs.h" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\hashtable.c" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\ktx.h" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\ktxfilestream.c" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\ktxfilestream.h" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\ktxint.h" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\ktxmemstream.c" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\ktxmemstream.h" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\ktxstream.h" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\loader.c" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\swap.c" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\uthash.h" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\lib\writer.c" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\ktx1.cpp" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\ktx1.h" />
+    <ClCompile Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\softfloat.cpp" />
+    <ClInclude Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\softfloat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\ZERO_CHECK.vcxproj">
+      <Project>{2D95A02B-11DE-3537-BB26-D7315D4BA0AA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\CMP_Compressonator.vcxproj">
+      <Project>{44A639A5-1640-31E8-82CA-FE10C41131FA}</Project>
+      <Name>CMP_Compressonator</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMP_Core.vcxproj">
+      <Project>{2FCE5CA8-1313-35DB-8012-AB69BD280776}</Project>
+      <Name>CMP_Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMP_Core_AVX.vcxproj">
+      <Project>{1DA453A9-D55D-3252-BCA0-56E97B3F9B08}</Project>
+      <Name>CMP_Core_AVX</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMP_Core_AVX512.vcxproj">
+      <Project>{BA37AF19-B81D-3479-8222-E56472A6AF4B}</Project>
+      <Name>CMP_Core_AVX512</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMP_Core_SSE.vcxproj">
+      <Project>{75447016-16F7-3851-9F8A-4B459A124F5F}</Project>
+      <Name>CMP_Core_SSE</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_framework\CMP_Framework.vcxproj">
+      <Project>{DEC15462-8746-39F8-BFCB-753C5568590C}</Project>
+      <Name>CMP_Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\extern_brotlig.vcxproj">
+      <Project>{01A09928-77BA-304F-9281-D2589389B440}</Project>
+      <Name>extern_brotlig</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

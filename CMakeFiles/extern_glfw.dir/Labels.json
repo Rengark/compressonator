@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/extern_glfw"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/95ccb32a2b262d3e6b668385f56c5c70/extern_glfw.rule"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/f0b9a09e88ccbd47771e6f2616964e05/extern_glfw-complete.rule"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/238e4e01f09e56c402b93780baf5b65c/extern_glfw-build.rule"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/238e4e01f09e56c402b93780baf5b65c/extern_glfw-configure.rule"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/238e4e01f09e56c402b93780baf5b65c/extern_glfw-download.rule"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/238e4e01f09e56c402b93780baf5b65c/extern_glfw-install.rule"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/238e4e01f09e56c402b93780baf5b65c/extern_glfw-mkdir.rule"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/238e4e01f09e56c402b93780baf5b65c/extern_glfw-patch.rule"
+		},
+		{
+			"file" : "F:/School Stuff/Y3T1/compressonator/CMakeFiles/238e4e01f09e56c402b93780baf5b65c/extern_glfw-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"extern_glfw"
+		],
+		"name" : "extern_glfw"
+	}
+}

@@ -1,0 +1,10 @@
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\CMAKEFILES\95CCB32A2B262D3E6B668385F56C5C70\PACKAGE_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

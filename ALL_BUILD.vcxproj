@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3641EEB3-4F9B-3A62-A865-8B06C03C8873}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\School Stuff\Y3T1\compressonator\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/School Stuff/Y3T1/compressonator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/School Stuff/Y3T1/compressonator" "-BF:/School Stuff/Y3T1/compressonator" --check-stamp-file "F:/School Stuff/Y3T1/compressonator/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.29\Templates\CPackConfig.cmake.in;F:\School Stuff\Y3T1\common\lib\ext\ktx\tmp\extern_ktx-mkdirs.cmake;F:\School Stuff\Y3T1\compressonator\CMakeFiles\3.29.2\CMakeCCompiler.cmake;F:\School Stuff\Y3T1\compressonator\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;F:\School Stuff\Y3T1\compressonator\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;F:\School Stuff\Y3T1\compressonator\CMakeFiles\3.29.2\CMakeSystem.cmake;F:\School Stuff\Y3T1\compressonator\cmake\helperfunctions.cmake;F:\School Stuff\Y3T1\compressonator\extern_brotlig-prefix\tmp\extern_brotlig-mkdirs.cmake;F:\School Stuff\Y3T1\compressonator\extern_glfw-prefix\tmp\extern_glfw-mkdirs.cmake;F:\School Stuff\Y3T1\compressonator\external\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\brotlig\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\cmake\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\cmake\dependencyinfo.cmake;F:\School Stuff\Y3T1\compressonator\external\directxtex\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\glew\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\glfw\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\glm\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\ktx\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\opencv\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\openexr\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\opengl\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\qt5\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\rapidxml\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\vulkan\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\School Stuff\Y3T1\compressonator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/School Stuff/Y3T1/compressonator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/School Stuff/Y3T1/compressonator" "-BF:/School Stuff/Y3T1/compressonator" --check-stamp-file "F:/School Stuff/Y3T1/compressonator/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\PatchInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\RepositoryInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\UpdateInfo.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\cfgcmd.txt.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\mkdirs.cmake.in;C:\Program Files\CMake\share\cmake-3.29\Modules\ExternalProject\shared_internal_commands.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.29\Templates\CPackConfig.cmake.in;F:\School Stuff\Y3T1\common\lib\ext\ktx\tmp\extern_ktx-mkdirs.cmake;F:\School Stuff\Y3T1\compressonator\CMakeFiles\3.29.2\CMakeCCompiler.cmake;F:\School Stuff\Y3T1\compressonator\CMakeFiles\3.29.2\CMakeCXXCompiler.cmake;F:\School Stuff\Y3T1\compressonator\CMakeFiles\3.29.2\CMakeRCCompiler.cmake;F:\School Stuff\Y3T1\compressonator\CMakeFiles\3.29.2\CMakeSystem.cmake;F:\School Stuff\Y3T1\compressonator\cmake\helperfunctions.cmake;F:\School Stuff\Y3T1\compressonator\extern_brotlig-prefix\tmp\extern_brotlig-mkdirs.cmake;F:\School Stuff\Y3T1\compressonator\extern_glfw-prefix\tmp\extern_glfw-mkdirs.cmake;F:\School Stuff\Y3T1\compressonator\external\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\brotlig\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\cmake\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\cmake\dependencyinfo.cmake;F:\School Stuff\Y3T1\compressonator\external\directxtex\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\glew\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\glfw\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\glm\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\ktx\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\opencv\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\openexr\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\opengl\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\qt5\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\rapidxml\CMakeLists.txt;F:\School Stuff\Y3T1\compressonator\external\vulkan\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\School Stuff\Y3T1\compressonator\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\ZERO_CHECK.vcxproj">
+      <Project>{2D95A02B-11DE-3537-BB26-D7315D4BA0AA}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\common\CMP_Common.vcxproj">
+      <Project>{B5E78DED-DA82-3C31-B3EB-3272A7573F60}</Project>
+      <Name>CMP_Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_compressonatorlib\CMP_Compressonator.vcxproj">
+      <Project>{44A639A5-1640-31E8-82CA-FE10C41131FA}</Project>
+      <Name>CMP_Compressonator</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMP_Core.vcxproj">
+      <Project>{2FCE5CA8-1313-35DB-8012-AB69BD280776}</Project>
+      <Name>CMP_Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMP_Core_AVX.vcxproj">
+      <Project>{1DA453A9-D55D-3252-BCA0-56E97B3F9B08}</Project>
+      <Name>CMP_Core_AVX</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMP_Core_AVX512.vcxproj">
+      <Project>{BA37AF19-B81D-3479-8222-E56472A6AF4B}</Project>
+      <Name>CMP_Core_AVX512</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_core\CMP_Core_SSE.vcxproj">
+      <Project>{75447016-16F7-3851-9F8A-4B459A124F5F}</Project>
+      <Name>CMP_Core_SSE</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\cmp_framework\CMP_Framework.vcxproj">
+      <Project>{DEC15462-8746-39F8-BFCB-753C5568590C}</Project>
+      <Name>CMP_Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_libs\gpu_decode\CMP_GpuDecode.vcxproj">
+      <Project>{E78E5BA3-1A93-3A38-B6A4-90FE4BD857E7}</Project>
+      <Name>CMP_GpuDecode</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\compressonatorcli\CompressonatorCLI-bin.vcxproj">
+      <Project>{0309FD76-2F7E-307D-A4E6-29EF51008ED7}</Project>
+      <Name>CompressonatorCLI-bin</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\canalysis\Image_Analysis.vcxproj">
+      <Project>{A01A3A61-C3E9-3AD3-8163-990ED600A64C}</Project>
+      <Name>Image_Analysis</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\binary\Image_BINARY.vcxproj">
+      <Project>{8E95F58A-256E-31E1-8B6A-720255F05355}</Project>
+      <Name>Image_BINARY</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\brlg\Image_BRLG.vcxproj">
+      <Project>{5DAEABB6-3564-3160-8346-3EAEC218B312}</Project>
+      <Name>Image_BRLG</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\dds\Image_DDS.vcxproj">
+      <Project>{4BB06394-90FA-3EA8-A090-246E85222778}</Project>
+      <Name>Image_DDS</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\exr\Image_EXR.vcxproj">
+      <Project>{0DD0F9BB-47B1-38E2-8CA8-0973A6D6BB47}</Project>
+      <Name>Image_EXR</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx\Image_KTX.vcxproj">
+      <Project>{41A97EF3-A23C-31C0-BF02-12F630AEA03D}</Project>
+      <Name>Image_KTX</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\ktx2\Image_KTX2.vcxproj">
+      <Project>{9FA5C25F-BC1C-38B5-A24A-E00A9C7563A7}</Project>
+      <Name>Image_KTX2</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\applications\_plugins\cimage\tga\Image_TGA.vcxproj">
+      <Project>{17995D86-AA4C-35BE-A863-412E0D4E4ABA}</Project>
+      <Name>Image_TGA</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\extern_brotlig.vcxproj">
+      <Project>{01A09928-77BA-304F-9281-D2589389B440}</Project>
+      <Name>extern_brotlig</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\extern_glfw.vcxproj">
+      <Project>{2BF5C02B-441D-3FE3-924D-FEAA24073656}</Project>
+      <Name>extern_glfw</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="F:\School Stuff\Y3T1\compressonator\extern_ktx.vcxproj">
+      <Project>{51060C46-739E-32C6-9601-DE712B886AB2}</Project>
+      <Name>extern_ktx</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

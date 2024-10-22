@@ -1,0 +1,10 @@
+^F:\SCHOOL STUFF\Y3T1\COMPRESSONATOR\APPLICATIONS\_PLUGINS\COMMON\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SF:/School Stuff/Y3T1/compressonator" "-BF:/School Stuff/Y3T1/compressonator" --check-stamp-file "F:/School Stuff/Y3T1/compressonator/applications/_plugins/common/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
